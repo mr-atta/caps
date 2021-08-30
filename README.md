@@ -42,7 +42,7 @@
 
 ## console output :
 
-![output](./img/lab11.01.PNG)
+![0](./img12/output-lab11-12.PNG)
 
 ## test :
 
