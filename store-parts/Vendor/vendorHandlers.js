@@ -12,7 +12,9 @@ function storid(payload) {
   let dateTime = date + " " + time;
 
   //
-  console.log(dateTime);
+  console.log(`EVENT { event: in-transit,`);
+  console.log(`time: ${dateTime}`);
+  console.log(`payload:`);
   console.log(payload);
 
   //

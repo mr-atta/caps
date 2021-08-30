@@ -34,7 +34,7 @@
   - dotenv
   - jest
 
-### running the app : on **node caps.js **
+### running the app : on **node caps.js**
 
 ### testing the app : on **npm test**
 
@@ -42,7 +42,7 @@
 
 ## console output :
 
-![output](./img/lab11.01.PNG)
+![output](./img/output-lab11-12.PNG)
 
 ## test :
 

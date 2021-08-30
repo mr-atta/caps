@@ -15,46 +15,14 @@ function driverid(payload) {
 
   setTimeout(() => {
     // data
-    console.log(
-      `DRIVER :: ${DriverName} :: picked up the order with id : ${payload.orderID}`
-    );
-
-    // time
-    let today = new Date();
-    let date =
-      today.getFullYear() +
-      "-" +
-      (today.getMonth() + 1) +
-      "-" +
-      today.getDate();
-    let time =
-      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let dateTime = date + " " + time;
-
-    console.log(dateTime);
+    console.log(`DRIVER : picked up ${payload.orderID}`);
 
     events.emit("delivered", payload);
   }, 1000); // 1 seconds
 
   setTimeout(() => {
     // data
-    console.log(
-      `VENDOR :: Thank you ${DriverName}  for delivering the order with id : ${payload.orderID}`
-    );
-
-    // time
-    let today = new Date();
-    let date =
-      today.getFullYear() +
-      "-" +
-      (today.getMonth() + 1) +
-      "-" +
-      today.getDate();
-    let time =
-      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    let dateTime = date + " " + time;
-
-    console.log(dateTime);
+    console.log(`DRIVER :delivered ${payload.orderID}`);
 
     //
     events.emit("delivered", payload);
