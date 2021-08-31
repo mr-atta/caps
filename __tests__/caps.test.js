@@ -44,4 +44,18 @@ describe("test event", () => {
   afterAll(() => {
     consoleSpy.mockRestore();
   });
+  it("delivered", async () => {
+    events.emit("delivered", order);
+
+    await consoleSpy();
+
+    expect(consoleSpy).toHaveBeenCalled();
+  });
+  it("delivered", async () => {
+    events.emit("delivered", order);
+
+    await consoleSpy();
+
+    expect(consoleSpy).toHaveBeenCalled();
+  });
 });
